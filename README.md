@@ -8,3 +8,8 @@ Read the force and torque data from ROS bag and rotate it to be expressed in mot
 4. Initialize FilePath_save with the location where you want to save the .sto files.
 5. Make sure you have the writeSTO funstion in the same folder.
 6. run the script.
+
+Write .mot and XML files for force data for each trial:
+1. Righ click on each .sto file, open Properties and change the ".sto" to ".mot".
+2. Open Force_sim_Iso7 with Notepad++.
+3. Change the datafile to match your .mot file.

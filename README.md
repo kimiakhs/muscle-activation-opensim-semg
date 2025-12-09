@@ -72,7 +72,7 @@ Create reserved actuator:
 
 # sEMG
 1. sEMG data is shared on the sEMG folder on google drive.
-2. Filter the data using this repo: (Link)
+2. Filter and save the data using this repo: (Link)
 3. Open Plotting.m.
 4. Change the file path on readmatrix function.
 5. Run the script.

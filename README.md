@@ -76,7 +76,7 @@ Create reserved actuator:
 
 # sEMG
 1. Get the sEMG data from the sEMG folder on google drive.
-2. Filter and save the data using this repo: (Link).
+2. Filter and save the data using this repo: https://github.com/hrelab/emg-processer
 3. Open Plotting.m.
 4. Change the file path on readmatrix function.
 5. Run the script.

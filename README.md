@@ -21,7 +21,7 @@ Write .mot and .xml files for force data for each trial:
 3. Change the datafile to match your .mot file.
 
 # OpenSim 4.5
-The MOBL model's folder doese not contain Geometry folder, we pulled the Geometry from Arm26 model on opensim 4.5 examples.
+The MOBL model's folder doese not contain Geometry folder, pull the Geometry from Arm26 model on opensim 4.5 examples.
 
 Scale the model:
 1. On OpenSim, load the model.

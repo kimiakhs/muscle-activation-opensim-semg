@@ -31,20 +31,36 @@ Run inverse kinematics:
 2. Open inverse kinematic tool window.
 3. Load inverse kinematic setup from IK folder on google drive.
 4. Change the file path to load the corresponding .trc file from Mocap folder on google drive.
-6. Save the results in the desired file path.
+6. Save the results in the desired Motion File path.
 7. Run the inverse kinematics.
 
 Run inverse dynamics:
 1. Open inverse dynamics tool window.
 2. Change the file path to load the the inverse kinematic results.
-3. On the external force tab, load the corresponding XML file.
+3. On the External Loads tab, load the corresponding XML file.
 4. Turn on the 6 Hz filtering.
-5. Save the results in the desired file path.
+5. Save the results in the desired Directory.
 6. Run the inverse dynamics.
 
 # Model modification for static oprimization
 Multiply muscle forces by 2:
 1. Open ModifyModel.m
 2. Change modelFile to match your scaled model file path.
-3. (you can change 2 to other numbers if needed or change the name).
+3. (you can change 2 to other numbers based on your application or change the name).
 4. Run the script.
+
+Create reserved actuator:
+1. Open cmc_actuators_wrist.xml with Notepad++.
+2. Modify the optimal_force based on your application.
+
+# Static optimization
+1. Load the scaled model.
+2. Lock these coordinates: (rx ry rz tx ty tz)
+3. Open the static optimization tool window.
+4. Load the inverse dynamics results.
+5. On the Actuators & External Loads tab, in External Loads space add the corresponding .xml force data.
+6. And in Actuators space add the .xml file corresponding to the reserved actuators.
+7. Save the results in the desired Directory.
+8. Run the static optimization.
+
+# sEMG

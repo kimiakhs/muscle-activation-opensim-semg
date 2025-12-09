@@ -21,7 +21,7 @@ Write .mot and .xml files for force data for each trial:
 3. Change the datafile to match your .mot file.
 
 # OpenSim 4.5
-The MODL model's folder doese not contain Geometry folder, we pulled the Geometry from Arm26 model on opensim 4.5 examples.
+The MOBL model's folder doese not contain Geometry folder, we pulled the Geometry from Arm26 model on opensim 4.5 examples.
 
 Scale the model:
 1. On OpenSim, load the model.
@@ -34,8 +34,8 @@ Scale the model:
 
 Run inverse kinematics:
 1. Load the scaled model.
-2. Open inverse kinematic tool window.
-3. Load inverse kinematic setup from IK folder on google drive.
+2. Open inverse kinematics tool window.
+3. Load inverse kinematics setup from IK folder on google drive.
 4. Change the file path to load the corresponding .trc file from Mocap folder on google drive.
 6. Save the results in the desired Motion File path.
 7. Run the inverse kinematics.
@@ -52,7 +52,7 @@ Run inverse dynamics:
 Multiply muscle forces by 2:
 1. Open ModifyModel.m.
 2. Change modelFile to match your scaled model file path.
-3. (you can change 2 to other numbers based on your application or change the name).
+3. (you can change 2 to other numbers based on your application).
 4. Run the script.
 
 Create reserved actuator:
@@ -65,14 +65,14 @@ Create reserved actuator:
 3. Open the static optimization tool window.
 4. Load the inverse dynamics results.
 5. On the Actuators & External Loads tab, in External Loads space add the corresponding .xml file.
-6. And in Actuators space add the .xml file corresponding to the reserved actuators.
+6. And in Actuators space add the .xml file corresponding to the reserved actuator.
 7. Save the results in the desired Directory.
 8. Run the static optimization.
 9. Open Plotting tool and plot activations.
 
 # sEMG
 1. sEMG data is shared on the sEMG folder on google drive.
-2. data was filtered using this repo: (Link)
+2. Filter the data using this repo: (Link)
 3. Open Plotting.m.
 4. Change the file path on readmatrix function.
 5. Run the script.
